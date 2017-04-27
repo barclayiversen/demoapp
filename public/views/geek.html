@@ -1,0 +1,19 @@
+<div class="jumbotron text-center">
+	<h1>Geek City</h1>
+
+	<p>{{ tagline }}</p>
+
+</div>
+<div class='container'>
+	<select>
+		<option ng-repeat="(key, value) in rates" >
+			{{ key }}
+		</option>
+	</select>
+	<ul ng-repeat="(key, value) in data">
+		<li>
+			<b>Name:</b> {{ key }} </p>
+			<b>Price: </b> <p class="money" ng-class="{'red': value < 0}"> {{ value | currency}}
+		</li>
+	</ul>
+</div>
