@@ -29,8 +29,8 @@ angular.module('GeekCtrl', []).controller('GeekController', function($scope, Gee
 
   };
 
-	$scope.convert = function() {
-		// console.log($scope.exchangeRate);
+	$scope.convert = function(rate) {
+		console.log(rate);
 	}
 
 });

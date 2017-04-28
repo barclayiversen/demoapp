@@ -5,10 +5,10 @@
 
 </div>
 <div class='container'>
-	<select>
-		<option ng-repeat="(key, value) in rates" >
+	<select ng-model="rates" ng-change="convert(rates)" ng-options="rates as rates.key for rates in rate">
+		<!-- <option ng-repeat="(key, value) in rates" >
 			{{ key }}
-		</option>
+		</option> -->
 	</select>
 	<ul ng-repeat="(key, value) in data">
 		<li>

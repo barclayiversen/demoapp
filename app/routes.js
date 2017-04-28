@@ -4,7 +4,7 @@ var request = require('request');
 	// handle things like api calls
 	// authentication routes
 	app.use(function(req, res, next) {
-		console.log('does this get hit again')
+
 		res.header("Access-Control-Allow-Origin", "*");
 		res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 		next();
