@@ -11,7 +11,7 @@ var request = require('request');
 	});
 
 	app.use('/api', function(req, res, next) {
-		request('http://hey-guy.softledger.com/?key=8bfffb50-2182-11e7-93ae-92361f002672', function(error, response, body) {
+		request('', function(error, response, body) {
 			console.log(response);
 			if (!error && response.statusCode === 200) {
 				console.log(body);
